@@ -68,3 +68,37 @@ Take 1 :
     Step 1:
     Step 2:
  */
+
+/*
+function hoist() {
+  a = 20;
+  var b = 100;
+}
+
+hoist();
+
+console.log(a);
+
+//Accessible as a global variable outside hoist() function
+//Output: 20
+
+console.log(b);
+
+//Since it was declared, it is confined to the hoist() function scope.
+//We can't print it out outside the confines of the hoist() function.
+//Output: ReferenceError: b is not defined.
+
+*/
+
+// // ReferenceError: funcName is not defined
+// funcName();
+
+// // TypeError: undefined is not a function
+// varName();
+
+// var varName = function funcName() {
+//     console.log("Definition not hoisted!");
+// };
+// As you can see, the function's name doesn't get hoisted if it is part of a function expression.
+
+// And that is how variable and function hoisting works in JavaScript.

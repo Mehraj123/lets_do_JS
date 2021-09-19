@@ -93,7 +93,7 @@ function sayHi() {
 //   console.log("Hi");
 // };
 
-// sayHi();te
+// sayHi();
 
 // var sayHi = function () {
 //   console.log("Hey");
@@ -107,6 +107,39 @@ function sayHi() {
  * It will simply not capture those argument in that function call.
  * And if you dont pass the arguments into a function which takes parametre
  */
+
+// sayHello();
+
+// function sayHello() {
+//   var hello = function () {
+//     console.log("Hello!!");
+//   };
+
+//   hello();
+
+//   var hello = function () {
+//     console.log("Hey!");
+//   };
+// }
+/**
+ * Take 1:
+    Step 1:
+    Step 2:
+ */
+
+sayHello();
+
+function sayHello() {
+  var hello = function () {
+    console.log("Hello!");
+  };
+
+  hello();
+
+  function hello() {
+    console.log("Hey!");
+  }
+}
 
 /**
  * Take 1:
